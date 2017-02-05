@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>404</title>
+    <!--<link rel="stylesheet" href="../css/core.css" type="text/css">-->
+    <style type="text/css">
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .width100 {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+        
+        .img_404 {
+            text-align: center;
+            /*width: 6.4rem;
+            height: 5.17rem;*/
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            background: url(../img/404.jpg) no-repeat center center;
+            background-size: contain;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            color: #892;
+            font-size: 0.4rem;
+            /*padding-top: 0.4rem;*/
+        }
+        
+        .img_404 p {
+            font-weight: bold;
+        }
+        /*.img_404 img {
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+        }*/
+    </style>
+</head>
+
+<body>
+    <div class="width100">
+        <div class="img_404">
+            <!--<p>网站装修中，敬请期待...</p>-->
+            <!--<p>Decorating, come soon.</p>-->
+            <!--<img src="../img/404.jpg" alt="" title="">-->
+        </div>
+    </div>
+
+    <script>
+        (function(doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function() {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    if (clientWidth >= 750) {
+                        docEl.style.fontSize = '100px';
+                    } else {
+                        docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                    }
+                };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    </script>
+</body>
+
+</html>

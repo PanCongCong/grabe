@@ -1,0 +1,294 @@
+/*global.css start*/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+}
+[class*="col-"] {
+    padding-left: 0;
+    padding-right: 0;
+}
+html,
+body {
+    height: 100%;
+}
+div,
+form,
+img,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+p,
+input,
+body,
+strong,
+span,
+pre {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-repeat: no-repeat;
+    outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+body {
+    font-size: 14px;
+    font-family: "Arial","Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0rem;
+    padding: 0rem;
+    color: #333;
+    background-color: #F5F5F5;
+    line-height: 0.24rem;
+    width: 100%;
+    position: relative;
+}
+img {
+    border: 0px;
+}
+ul,
+li {
+    list-style: none;
+}
+em,
+i {
+    font-style: normal;
+}
+a {
+    text-decoration: none;
+    color: #4c4c4c;
+    outline: none;
+}
+button {
+    background: none;
+}
+a:focus,
+a:hover {
+    text-decoration: none;
+    background-repeat: no-repeat;
+}
+a,
+area {
+    blur: expression(this.onFocus=this.blur())
+}
+
+/*通用样式*/
+h1{
+    font-size: 36px;
+}
+h3{
+    font-size: 24px;
+}
+h4{
+    font-size: 18px;
+}
+.qc {
+    overflow: hidden;
+    _zoom: 1;
+}
+
+.qf {
+    clear: both;
+}
+
+.fleft {
+    float: left;
+}
+
+.fright {
+    float: right
+}
+
+.none {
+    display: none;
+}
+
+.ml5 {
+    margin-left: 5px;
+}
+
+.mr5 {
+    margin-right: 0.05rem;
+}
+
+.mt10 {
+    margin-top: 10px;
+}
+
+.mt20 {
+    margin-top: 0.2rem;
+}
+
+.mb15 {
+    margin-bottom: 15px;
+}
+
+.mb20 {
+    margin-bottom: 0.2rem;
+}
+
+.mb50 {
+    margin-bottom: 0.5rem;
+}
+
+.mtb30 {
+    margin: 0.3rem 0;
+}
+
+.mr5 {
+    margin-right: 5px;
+}
+
+.mr10 {
+    margin-right: 0.1rem;
+}
+
+.mr30 {
+    margin-right: 0.3rem;
+}
+
+.mr40 {
+    margin-right: 0.4rem;
+}
+
+.ml15 {
+    margin-left: 15px;
+}
+.ml20 {
+    margin-left: 0.2rem;
+}
+
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.btn-default {
+    text-shadow: none;
+}
+
+.height100 {
+    height: 100%;
+}
+
+.width200 {
+    width: 200px;
+}
+
+.width150 {
+    width: 150px;
+}
+
+.green {
+    color: #66cc00;
+}
+
+.black {
+    color: #000;
+}
+
+.blue {
+    color: #28a4ce;
+}
+
+.yellow {
+    color: #ffcc00;
+}
+
+.red {
+    color: #ff0000;
+}
+
+.bg_blue {
+    background: #28a4ce;
+}
+
+.clear {
+    clear: both;
+    line-height: 0;
+    height: 0;
+    font-size: 0;
+}
+
+.web {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+input,
+button,
+select,
+textarea,
+a,
+i {
+    outline: none;
+    border: none;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+label {
+    font-weight: normal;
+    height: 30px;
+    line-height: 30px;
+}
+
+
+/*元素固定定位时，避免在ie6下元素抖动*/
+
+* html {
+    background: url(about:blank);
+}
+
+.positR{
+    position: relative;
+}
+
+
+/*通用标题*/
+.header-inner{
+    margin: 0 auto;
+    margin-bottom: 0.12rem;
+    position: relative;
+}
+.sec-title h2{
+    padding: 0.08rem 0 0.1rem 0;
+    font-weight: 700;
+    /*font-size: 40px;*/
+    line-height: 30px;
+    font-family: 'Open Sans',sans-serif;
+    color: #444;
+}
+.sec-title p{
+    padding: 8px 25px;
+    color: #444;
+    line-height: 30px;
+}
+/*global.css end*/

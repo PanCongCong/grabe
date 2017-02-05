@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<!--模拟IE7的具体方式如下： < meta http-equiv = "X-UA-Compatible" content = "IE=EmulateIE7" />
+    chrome=1让用户的IE浏览器外不变，但用户在浏览网页时，实际上使用的是Google Chrome浏览器内核 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="Keywords" content="Custom Acrylic and Plastic Fabrication, Laser cutting & engraving acrylic products, CNC parts, 3D printing parts.">
+	<meta name="Description" content="Custom Acrylic and Plastic Fabrication is the core of our business. We offer a range of services, from a concept, to full design and production management, to producing complete products on a regular basis or for one-off requirements.">
+	<title>Grabe Engineering Co.,Limited</title>
+	<!--此js必须最先加载-->
+	<script src="js/common.js"></script>
+	<link rel="stylesheet" href="libs/bootstrap.css" type="text/css">
+	<!--<link rel="stylesheet" href="http://at.alicdn.com/t/font_a112kdowratf0f6r.css" type="text/css">-->
+	<link rel="stylesheet" type="text/css" href="./font/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="./font/iconfont.woff">
+	<link rel="stylesheet" type="text/css" href="./font/iconfont.ttf">
+	<link rel="stylesheet" href="css/core.css" type="text/css">
+	<link rel="stylesheet" href="css/index.css">
+</head>
+
+<body ng-controller="indexCon">
+	<header class="header-top" id="header-top">
+		<div class="row">
+			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-2 header-logo">
+				<a href="https://www.grabe.cn/code/home.html"><img src="img/logo.png"></a>
+			</div>
+			<div class="col-xs-9 col-sm-9 col-md-8 col-lg-7 header-menu">
+				<nav class="navbar" role="navigation">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+							<span class="sr-only">切换导航</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div class="collapse navbar-collapse" id="example-navbar-collapse">
+						<ul class="nav navbar-nav" role="tablist">
+							<li data-toggle="collapse" data-target="#example-navbar-collapse" role="presentation"><a ui-sref="home">HOME</a></li>
+							<li data-toggle="collapse" data-target="#example-navbar-collapse" role="presentation"><a ui-sref="about">ABOUT US</a></li>
+							<li data-toggle="collapse" data-target="#example-navbar-collapse" role="presentation"><a ui-sref="process">OUR PROCESS</a></li>
+							<li data-toggle="collapse" data-target="#example-navbar-collapse" role="presentation"><a ui-sref="products">PRODUCTS</a></li>
+							<li data-toggle="collapse" data-target="#example-navbar-collapse" role="presentation"><a ui-sref="contact">CONTACT US</a></li>
+						</ul>
+					</div>
+				</nav>
+				<div class="col-xs-9 col-sm-12 col-md-12 col-lg-12 header-detail">
+					<ul class="clearfix">
+						<li class="header-detail-phone">
+							<a title="86-0710-6403712" href="tel:86-0710-6403712">
+								<span class="icon iconfont icon-xihebiaozhunyuanjian439 m-icon"></span>
+								<span>86-0710-6403712</span>
+							</a>
+						</li>
+						<li class="header-detail-mail">
+							<a title="andywu515@gmail.com" href="mailto:andywu515@gmail.com">
+								<span class="icon iconfont icon-youxiang m-icon"></span>
+								<span>andywu515@gmail.com</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+		</ol>
+
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner" role="listbox">
+			<div class="item active">
+				<img src="img/banner5.jpg" alt="...">
+			</div>
+			<div class="item">
+				<img src="img/banner5.jpg" alt="...">
+			</div>
+			<div class="item">
+				<img src="img/banner5.jpg" alt="...">
+			</div>
+		</div>
+
+		<!-- Controls -->
+		<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+			<span class="arrow icon iconfont icon-zuojiantou"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+			<span class="arrow icon iconfont icon-shouyezhuyetubiao04"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div>
+
+	<div class="body-view" ui-view></div>
+	<div class="footer-froums">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 ">
+					<form id="myForm" name="myForm" action="http://2.pandemo.applinzi.com/grabe/sendMail.php" method="POST">
+						<div class="form_main_box">
+							<div class="row">
+								<div class="header-inner text-center">
+									<div class="sec-title">
+										<h2>Request Quote</h2>
+									</div>
+								</div>
+							</div>
+							<div class="fleft w66">
+								<div class="col-xs-12 col-sm-12 col-md-6">
+									<label>Name<span class="xing">*</span></label>
+									<input class="form-control" name="Name" ng-model="Name" type="text" required>
+								</div>
+								<div class="col-xs-12 col-sm-12 col-md-6">
+									<label>Email<span class="xing">*</span></label>
+									<input class="form-control" name="Email" ng-model="Email" type="text" required>
+								</div>
+								<div class="col-xs-12 col-sm-12 col-md-6">
+									<label>Services<span class="xing">*</span></label>
+									<input class="form-control" name="Services" ng-model="Services" type="text" required>
+								</div>
+								<div class="col-xs-12 col-sm-12 col-md-6">
+									<label>Suburb<span class="xing">*</span></label>
+									<input class="form-control" name="Suburb" ng-model="Suburb" type="text" required>
+								</div>
+							</div>
+							<div class="fright w33">
+								<div class="col-xs-12 col-sm-12 col-md-12">
+									<label>Phone<span class="xing">*</span></label>
+									<input class="form-control" name="Phone" ng-model="Phone" type="text" required>
+								</div>
+								<div class="col-xs-12 col-sm-12 col-md-12">
+									<label>Comment</label>
+									<textarea rows="4" class="form-control" ng-model="Comment" name="Comment"></textarea>
+								</div>
+							</div>
+							<div class="fleft w66">
+								<div class="col-xs-12 col-sm-12 col-md-6">
+									<label style="text-transform: none; line-height: 15px;">
+										Just to prove you are ta human.
+										<br>
+										Please answer the following math challenge*
+									</label>
+									<div class="captcha_box">
+										<img style="margin-left: 10px" id="checkpic" ng-click="changing()" src='{{yzm}}' />
+										<input class="form-control" type="text" id="" style="display: inline-block" ng-model="txtyzm">
+										<a class="icon iconfont icon-shuaxin1 shuaxin" title="Refresh" ng-click="changing()">
+											<!--<img src="img/icon-refresh.png">-->
+										</a>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-12 col-md-6">
+									<button type="button" ng-click="subMail()" class="btn submit fright" ng-disabled="yzmflag|| myForm.Name.$invalid || myForm.Email.$invalid || myForm.Services.$invalid || myForm.Suburb.$invalid || myForm.Phone.$invalid">Submit</button>
+									<!--<input type="text" name="" value="Submit" title="Submit" class="btn btn-info fright btn-submit">-->
+									<div class="text-msg fright">
+										The fields marked with<br> <span class="xing">*</span> are mandatory
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer_wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 mb20">
+					<h3>
+						Quick Links
+					</h3>
+					<ul>
+						<li><a ui-sref="home">Home</a></li>
+						<li><a ui-sref="about">About Us</a></li>
+						<li><a ui-sref="process">Our Process</a></li>
+						<li><a ui-sref="products">Products</a></li>
+						<li><a ui-sref="contact">Contact Us</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+					<h3>Product Links</h3>
+					<ul>
+						<li><a ui-sref="products">Acrylic Sign Holder</a></li>
+						<li><a ui-sref="products">Acrylic Cosmetics Display</a></li>
+						<li><a ui-sref="products">Acrylic 3D LED illusion Night Light</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+					<h3>
+						Contact Us
+					</h3>
+					<div class="con-icon mt10">
+						<div class="footerIcon fb-icon icon iconfont icon-user-address"></div>
+						<span>NO.66, GUANGWU ROAD, ZAOYANG CITY, HUBEI PROVINCE.</span>
+					</div>
+					<div class="con-icon">
+						<div class="footerIcon icon iconfont icon-dianhua call-icon"></div>
+						<a title="86-0710-6403712" href="tel:86-0710-6403712">86-0710-6403712</a>
+					</div>
+					<div class="con-icon">
+						<div class="footerIcon icon iconfont icon-youxiang mail-icon"></div>
+						<a title="andywu515@gmail.com" href="mailto:andywu515@gmail.com">andywu515@gmail.com</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 footer-bottom-url">© 2016 <a href="https://www.grabe.cn">www.grabe.cn</a></div>
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 footer-bottom-design">
+					<div class="footer-social">
+						<ul class="clearfix">
+							<li class="f-fb">
+								<a class="icon iconfont icon-facebook" href="https://www.facebook.com/grabeengineering/" target="_blank" title="Facebook"></a>
+							</li>
+							<li class="f-tw">
+								<a class="icon iconfont icon-icontwiter" href="https://twitter.com/AndyWu0515" target="_blank" title="Twitter"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="libs/require.js" data-main="js/main"></script>
+</body>
+
+</html>
